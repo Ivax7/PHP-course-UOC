@@ -1,11 +1,7 @@
 <?php
 
+$query = require 'core/bootstrap.php';
 
-$task = [
-  'title' => 'Finish homework',
-  'due' => 'today',
-  'assigned_to' => 'Xavi',
-  'completed' => false
-];
 
-require 'index.view.php';
+require Router::load('routes.php')
+  ->direct(Request::uri());
