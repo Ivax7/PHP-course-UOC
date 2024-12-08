@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información Personal</title>
-    <style>
-        header {
-            background-color: gray;
-            text-align: center;
-            padding: 2em;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Información Personal</h1>
-    </header>
+<?php require('partials/head.php'); ?>
 
-    <nav>
-        <ul>
-            <li><a href="about.view.php">About Page</a></li>
-            <li><a href="contact.view.php">Contact Page</a></li>
-        </ul>
-    </nav>
 
+    <h1>Información Personal</h1>
 
     <ul>
         <?php foreach ($tasks as $task) : ?>
@@ -41,5 +19,6 @@
             </li>
         <?php endforeach; ?>
     </ul>
-</body>
-</html>
+
+
+<?php require('partials/footer.php'); ?>
